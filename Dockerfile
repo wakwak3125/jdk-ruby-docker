@@ -13,8 +13,7 @@ RUN sudo apt update && \
 RUN rbenv install 2.6.5 && \
     rbenv global 2.6.5
 
-RUN gem install bundler
+RUN eval "$(rbenv init -)" && gem install bundler
 RUN sudo apt install postgresql-client
 
 CMD "/bin/bash"
-
