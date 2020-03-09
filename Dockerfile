@@ -16,4 +16,4 @@ RUN rbenv install 2.6.5 && \
 
 RUN gem install bundler
 RUN sudo apt install postgresql-client
-
+RUN sudo apt install libpq-dev
